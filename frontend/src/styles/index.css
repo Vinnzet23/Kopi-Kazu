@@ -1,0 +1,11 @@
+@import './base.css';
+@import './admin.css';
+@import './form.css';
+
+/* Root application baseline */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+

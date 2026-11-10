@@ -1,0 +1,10 @@
+@import './styles/base.css';
+@import './styles/admin.css';
+@import './styles/form.css';
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+

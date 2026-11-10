@@ -1,0 +1,52 @@
+/* Toast Notification System */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast-message {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 14px 18px;
+  border-radius: var(--sudut-kartu);
+  background: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideInRight 0.25s ease-out;
+  border-left: 4px solid var(--warna-utama);
+}
+
+.toast-message.success {
+  border-left-color: var(--warna-sukses);
+}
+
+.toast-message.warning {
+  border-left-color: var(--warna-peringatan);
+}
+
+.toast-message.danger {
+  border-left-color: var(--warna-kritis);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "name": "kopi-kazu-web",
+  "version": "2.4.0",
+  "private": true,
+  "description": "Kopi Kazu POS v2.4 — Point of Sale & Recipe Auto-Deduct Inventory System",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "cek": "npm --prefix backend run cek"
+  }
+}
+
